@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pães</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/pao-caseiro-recem-cozido-em-uma-mesa-de-madeira-rustica-gerada-por-inteligencia-artificial_188544-150475.jpg?ga=GA1.1.1485890071.1742242136&semt=ais_hybrid);">
+                <div class="text">
+                    <h1>Bem-vindo à nossa irresistível seleção de pães!</h1>
+                    <h4>Aqui, você vai encontrar receitas irresistíveis para preparar pães fresquinhos e cheios de sabor. 
+                        De pães caseiros fofinhos a crostas douradas e crocantes, passando por opções tradicionais e inovadoras que vão conquistar o 
+                        seu paladar. Se você é fã de pães ou está em busca de uma receita especial para complementar suas refeições, temos opções 
+                        para todos os gostos e momentos. Prepare-se para saborear o aroma e a textura perfeita de cada pedaço, transformando qualquer 
+                        ocasião em um verdadeiro festival de sabor!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Pão Italiano -->
+    <div class="modal fade" id="pao-italiano" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    10g de sal<br>
+                    10g de açúcar<br>
+                    300ml de água morna<br>
+                    30ml de azeite de oliva
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a farinha, o sal e o açúcar.<br>
+                    Dissolva o fermento na água morna e adicione à mistura de farinha. Misture bem até formar uma massa.<br>
+                    Adicione o azeite e sove a massa por cerca de 10 minutos, até que fique lisa e elástica.<br>
+                    Cubra a massa com um pano limpo e deixe descansar por 1 hora ou até dobrar de volume.<br>
+                    Modele a massa em formato de um pão redondo ou alongado e coloque em uma assadeira enfarinhada.<br>
+                    Deixe descansar por mais 30 minutos.<br>
+                    Preaqueça o forno a 220°C. Faça alguns cortes em cima do pão com uma faca bem afiada.<br>
+                    Asse por 30-40 minutos ou até que o pão esteja dourado e ao bater no fundo faça um som oco.<br>
+                    Deixe esfriar antes de servir.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Pão Francês -->
+    <div class="modal fade" id="pao-frances" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    10g de sal<br>
+                    300ml de água morna<br>
+                    15g de açúcar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a farinha, o sal e o açúcar.<br>
+                    Dissolva o fermento na água morna e adicione à mistura de farinha. Mexa até formar uma massa.<br>
+                    Sove a massa por cerca de 10 minutos até ela ficar lisa e macia.<br>
+                    Deixe a massa descansar coberta com um pano úmido por 1 hora ou até dobrar de volume.<br>
+                    Modele os pães no formato tradicional do pão francês e coloque-os em uma assadeira.<br>
+                    Deixe descansar por mais 30 minutos.<br>
+                    Preaqueça o forno a 230°C. Faça cortes na parte superior dos pães com uma faca.<br>
+                    Asse por 20-25 minutos até que fiquem dourados e crocantes.<br>
+                    Retire do forno e deixe esfriar.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Baguete -->
+    <div class="modal fade" id="baguete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    10g de sal<br>
+                    350ml de água morna<br>
+                    15g de açúcar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a farinha, o sal e o açúcar.<br>
+                    Dissolva o fermento na água morna e adicione à mistura de farinha. Misture até formar uma massa homogênea.<br>
+                    Sove a massa por 10 minutos até ficar lisa e elástica.<br>
+                    Cubra com um pano úmido e deixe descansar por 1 hora ou até dobrar de volume.<br>
+                    Modele a massa em 2 ou 3 baguetes longas e coloque-as em uma assadeira enfarinhada.<br>
+                    Deixe as baguetes descansarem por 30 minutos.<br>
+                    Preaqueça o forno a 220°C. Faça cortes diagonais com uma faca na parte superior das baguetes.<br>
+                    Asse por 25-30 minutos até ficarem douradas e crocantes.<br>
+                    Retire do forno e deixe esfriar.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Pão de Forma -->
+    <div class="modal fade" id="pao-de-forma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    10g de sal<br>
+                    300ml de água morna<br>
+                    15g de açúcar<br>
+                    30g de manteiga derretida
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a farinha, o sal e o açúcar.<br>
+                    Dissolva o fermento na água morna e adicione à mistura de farinha. Misture bem até formar uma massa.<br>
+                    Adicione a manteiga derretida e sove a massa por cerca de 10 minutos.<br>
+                    Deixe a massa descansar por 1 hora ou até dobrar de volume.<br>
+                    Modele a massa em formato retangular e coloque em uma forma de pão untada.<br>
+                    Deixe descansar por mais 30 minutos.<br>
+                    Preaqueça o forno a 180°C e asse por 30-35 minutos ou até que o pão esteja dourado.<br>
+                    Retire do forno e deixe esfriar antes de cortar.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Ciabatta -->
+    <div class="modal fade" id="ciabatta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    10g de sal<br>
+                    350ml de água morna<br>
+                    30ml de azeite de oliva
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a farinha e o sal.<br>
+                    Dissolva o fermento na água morna e adicione à mistura de farinha. Misture até formar uma massa pegajosa.<br>
+                    Adicione o azeite e sove a massa por cerca de 10 minutos. Deixe a massa descansar por 1 hora.<br>
+                    Modele a massa em forma de um pão retangular, polvilhe com farinha e coloque em uma assadeira.<br>
+                    Deixe descansar por mais 30 minutos.<br>
+                    Preaqueça o forno a 220°C e asse por 25-30 minutos até o pão estar dourado e crocante por fora.<br>
+                    Deixe esfriar antes de cortar.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() => {
+        const receitas = [
+            // Pão Italiano
+            {
+                nome: 'Pão Italiano', 
+                modal: '#pao-italiano',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-EXAJZv0wDdOFZoak3NjH-AaX2caEe2wRFg&s'
+            },
+            // Pão Francês
+            {
+                nome: 'Pão Francês', 
+                modal: '#pao-frances',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VMWdnUJdJ1SVfoPNBO5uaijz5bHFqM-yAg&s'
+            },
+            // Baguete
+            {
+                nome: 'Baguete', 
+                modal: '#baguete',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPM4NizJKRK8j79BBi22A3pJxil82rPTDFTg&s'
+            },
+            // Pão de Forma
+            {
+                nome: 'Pão de Forma', 
+                modal: '#pao-de-forma',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9BLYUSEEfzPjURiT414XqpU1Tu6QdhrxCA&s'
+            },
+            // Ciabatta
+            {
+                nome: 'Ciabatta',
+                modal: '#ciabatta',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fKDlm_IrgzTctZHXC2NfzwdzI0Ga4uZSjA&s'
+            }
+        ];
+
+        receitas.forEach(receita => {
+            let receitaHTML = `
+                <div class="item" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+
+    });
+
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>

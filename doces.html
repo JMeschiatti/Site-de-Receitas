@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Doces</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/brownie-caseiro-indulgente-com-chocolate-amargo-derretido-gerado-por-ia_188544-22436.jpg?ga=GA1.1.1485890071.1742242136&semt=ais_hybrid);">
+                <div class="text">
+                    <h1>Bem-vindo à nossa doce tentação!</h1>
+                    <h4>Aqui, você encontra uma seleção irresistível de receitas de doces para adoçar seu dia e surpreender quem você ama. 
+                        De bolos fofinhos a sobremesas sofisticadas, passando pelos clássicos e as novidades que vão conquistar seu paladar. 
+                        Seja para um lanche rápido ou para um evento especial, temos opções para todos os gostos e níveis de habilidade na cozinha. 
+                        Prepare-se para se apaixonar por cada receita e transformar momentos simples em verdadeiras delícias!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Bolo de Rolo -->
+    <div class="modal fade" id="bolo-de-rolo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    4 ovos<br>
+                    1 xícara de açúcar<br>
+                    1 xícara de farinha de trigo<br>
+                    1 colher de sopa de manteiga<br>
+                    1 colher de chá de fermento em pó<br>
+                    1 xícara de goiabada derretida
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Bata as claras em neve e reserve.<br>
+                    Na batedeira, bata as gemas com o açúcar até obter um creme fofo.<br>
+                    Adicione a manteiga e continue batendo.<br>
+                    Acrescente a farinha e o fermento peneirados, alternando com a clara em neve.<br>
+                    Coloque a massa em uma assadeira untada e enfarinhada.<br>
+                    Asse em forno pré-aquecido a 180°C por cerca de 20 minutos.<br>
+                    Retire do forno e desenforme sobre um pano de prato limpo.<br>
+                    Passe a goiabada derretida sobre a massa e enrole como um rocambole.<br>
+                    Sirva e aproveite!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Cartola -->
+    <div class="modal fade" id="cartola" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    4 bananas maduras<br>
+                    1 colher de sopa de manteiga<br>
+                    1/2 xícara de queijo coalho ralado<br>
+                    1/4 xícara de açúcar<br>
+                    Canela a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Corte as bananas em rodelas e reserve.<br>
+                    Em uma frigideira, derreta a manteiga e frite as bananas até que fiquem douradas.<br>
+                    Adicione o açúcar e mexa até caramelizar.<br>
+                    Coloque o queijo coalho ralado sobre as bananas e deixe derreter.<br>
+                    Polvilhe com canela a gosto e sirva quente.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Cocada -->
+    <div class="modal fade" id="cocada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 lata de leite condensado<br>
+                    2 xícaras de coco ralado fresco<br>
+                    1/2 xícara de açúcar<br>
+                    1 colher de sopa de manteiga
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma panela, misture todos os ingredientes.<br>
+                    Leve ao fogo médio, mexendo constantemente até que a mistura comece a soltar do fundo da panela.<br>
+                    Quando atingir o ponto de brigadeiro, retire do fogo.<br>
+                    Coloque a cocada em uma assadeira untada e espalhe até que fique uniforme.<br>
+                    Deixe esfriar e corte em pedaços.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Brigadeiro -->
+    <div class="modal fade" id="brigadeiro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 lata de leite condensado<br>
+                    2 colheres de sopa de manteiga<br>
+                    7 colheres de sopa de achocolatado em pó<br>
+                    Chocolate granulado a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma panela, adicione o leite condensado, a manteiga e o achocolatado.<br>
+                    Cozinhe em fogo médio, mexendo sempre, até a mistura começar a desgrudar do fundo da panela.<br>
+                    Retire do fogo e deixe esfriar por alguns minutos.<br>
+                    Modele os brigadeiros com as mãos untadas e passe no chocolate granulado.<br>
+                    Sirva em forminhas de papel.!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Beijinho -->
+    <div class="modal fade" id="beijinho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 lata de leite condensado<br>
+                    100g de coco ralado<br>
+                    1 colher de sopa de manteiga<br>
+                    Açúcar cristal para enrolar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma panela, adicione o leite condensado, o coco e a manteiga.<br>
+                    Cozinhe em fogo baixo, mexendo sempre, até a mistura desgrudar do fundo da panela.<br>
+                    Deixe esfriar um pouco e depois enrole em bolinhas.<br>
+                    Passe as bolinhas no açúcar cristal e coloque em forminhas de papel.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Quindim -->
+    <div class="modal fade" id="quindim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    6 gemas<br>
+                    1 lata de leite condensado<br>
+                    1/2 xícara de coco ralado<br>
+                    2 colheres de sopa de manteiga derretida<br>
+                    1 xícara de açúcar<br>
+                    1/4 xícara de água
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Bata as gemas com o açúcar e a água até formar uma mistura homogênea.<br>
+                    Adicione o leite condensado, o coco e a manteiga derretida, misturando bem.<br>
+                    Coloque a mistura em forminhas de pudim untadas com manteiga e açúcar.<br>
+                    Asse em banho-maria por aproximadamente 40 minutos, ou até que o quindim esteja firme e dourado.<br>
+                    Deixe esfriar e desenforme.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Torta de Maçã -->
+    <div class="modal fade" id="torta-de-maca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    3 maçãs verdes descascadas e fatiadas<br>
+                    1 xícara de açúcar<br>
+                    1/2 colher de chá de canela<br>
+                    2 colheres de sopa de suco de limão<br>
+                    1 pacote de massa folhada<br>
+                    1 colher de sopa de manteiga
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Preaqueça o forno a 180°C.<br>
+                    Em uma tigela, misture as maçãs fatiadas, o açúcar, a canela e o suco de limão.<br>
+                    Deixe descansar por 10 minutos.<br>
+                    Forre uma assadeira com a massa folhada, espalhe as maçãs e cubra com mais massa.<br>
+                    Pincele a manteiga derretida sobre a massa e asse por cerca de 30 minutos ou até que a torta esteja dourada.<br>
+                    Sirva morna ou fria.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() => {
+        const receitas = [
+            // Bolo de Rolo
+            {
+                nome: 'Bolo de Rolo', 
+                modal: '#bolo-de-rolo',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4R73ZxbtNe6cR3-XdtEMieNoq3zf99ryeg&s'
+            },
+            // Cartola
+            {
+                nome: 'Cartola', 
+                modal: '#cartola',
+                img: 'https://www.receiteria.com.br/wp-content/uploads/cartola-de-banana.jpeg'
+            },
+            // Cocada
+            {
+                nome: 'Cocada', 
+                modal: '#cocada',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qbyupqm3y_SUKSPUjeAUUhbfe2hSPYm2BQ&s'
+            },
+            // Brigadeiro
+            {
+                nome: 'Brigadeiro', 
+                modal: '#brigadeiro',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3ADee3Yqt15y_jhZYnI17CpAT-4S41wAzBjxj-h3rbxcOCmHSb53Y8tlOZVGfWbLrw4&usqp=CAU'
+            },
+            // Beijinho
+            {
+                nome: 'Beijinho', 
+                modal: '#beijinho',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjaWv585yhYDb0TRmT6dK9KbNiLN6cGHDyzg&s'
+            },
+            // Quindim
+            {
+                nome: 'Quindim', 
+                modal: '#quindim',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpCo4vueEJqGFfrFvRzxAMaoqNqQ3PmGSHA&s'
+            },
+            // Torta de Maçã
+            {
+                nome: 'Torta de Maçã', 
+                modal: '#torta-de-maca',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EI5R0afbBD-tShdkWmZB5btMWkZlsW1j-Q&s' 
+            },
+        ];
+
+        receitas.forEach(receita => {
+            let receitaHTML = `
+                <div class="item" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+
+    });
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>

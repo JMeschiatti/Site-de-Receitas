@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sucos</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/frescura-em-um-copo-de-abacaxi-framboesa-morango-menta-citrica-gerada-por-inteligencia-artificial_188544-109788.jpg?t=st=1742242206~exp=1742245806~hmac=a3921208cfe557a8dedb9de0ee121b4ac48ab850a534a0821d1b107490e163bf&w=1060);">
+                <div class="text">
+                    <h1>Bem-vindo à nossa refrescante explosão de sabores!</h1>
+                    <h4>Aqui, você encontra uma incrível variedade de receitas de sucos naturais que vão dar um up no seu dia. 
+                        De combinações clássicas a misturas criativas e saudáveis, temos opções para todos os gostos. 
+                        Seja para começar o dia com energia ou para se refrescar no calor, nossos sucos são perfeitos para qualquer momento. 
+                        Prepare-se para se apaixonar por cada gole e transformar sua rotina em uma explosão de frescor e vitalidade!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Suco de Cupuaçu -->
+    <div class="modal fade" id="suco-de-cupuacu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 polpa de cupuaçu congelada<br>
+                    1 copo de água gelada<br>
+                    2 colheres de sopa de mel<br>
+                    Gelo a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Coloque a polpa de cupuaçu no liquidificador.<br>
+                    Adicione a água gelada, o mel e o gelo.<br>
+                    Bata tudo até ficar homogêneo.<br>
+                    Sirva em copos e aproveite!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Suco de Bacaba -->
+    <div class="modal fade" id="suco-de-bacaba" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 xícara de bacaba (fruto da palmeira de bacaba)<br>
+                    1 copo de água<br>
+                    Açúcar a gosto<br>
+                    Gelo a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Lave bem as bacabas e coloque-as no liquidificador.<br>
+                    Adicione a água e o açúcar.<br>
+                    Bata até desmanchar as bacabas.<br>
+                    Coe, se necessário, e sirva com gelo.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Suco de Caju -->
+    <div class="modal fade" id="suco-de-caju" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    2 cajus maduros<br>
+                    1 copo de água gelada<br>
+                    1 colher de sopa de açúcar (opcional)<br>
+                    Gelo a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Retire a polpa dos cajus e coloque no liquidificador.<br>
+                    Adicione a água e, se preferir, o açúcar.<br>
+                    Bata até obter uma mistura homogênea.<br>
+                    Sirva com gelo e aproveite!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Suco de Umbu -->
+    <div class="modal fade" id="suco-de-umbu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    3 umbus maduros<br>
+                    1 copo de água gelada<br>
+                    Mel a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Coloque os umbus no liquidificador.<br>
+                    Adicione a água e o mel.<br>
+                    Bata bem até obter um suco cremoso.<br>
+                    Coe, se desejar, e sirva gelado.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Suco de Maçã Verde com Hortelã -->
+    <div class="modal fade" id="suco-de-maca-verde-com-hortela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    2 maçãs verdes<br>
+                    Folhas de hortelã a gosto<br>
+                    1 copo de água gelada<br>
+                    Gelo a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Lave bem as maçãs e corte em pedaços.<br>
+                    Coloque as maçãs no liquidificador com a água e as folhas de hortelã.<br>
+                    Bata até ficar bem homogêneo.<br>
+                    Coe e sirva com gelo.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() => {
+        const receitas = [
+            // Suco de Cupuaçu
+            {
+                nome: 'Suco de Cupuaçu', 
+                modal: '#suco-de-cupuacu',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSexkH51B133lkJR21VuIs0SN6ULntJw6aew&s'
+            },
+            // Suco de Bacaba
+            {
+                nome: 'Suco de Bacaba', 
+                modal: '#suco-de-bacaba',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bSCCPNayfSaAcIj_4twxqxFR1MllXb1Mmg&s'
+            },
+            // Suco de Caju
+            {
+                nome: 'Suco de Caju', 
+                modal: '#suco-de-caju',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKA6hvrZfNa22F40bc5iu_yNW7THuW9g2zQ&s'
+            },
+            // Suco de Umbu
+            {
+                nome: 'Suco de Umbu', 
+                modal: '#suco-de-umbu',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOczpK9dQ0sZzgPT0kjnr-kzYigDijiLYobw&s'
+            },
+            // Suco de Maçã Verde com Hortelã
+            {
+                nome: 'Suco de Maçã Verde com Hortelã', 
+                modal: '#suco-de-maca-verde-com-hortela',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuN6qdTawyVon2VR-WDZ0vRWrMlpQfpz8Iw&s'
+            }
+        ];
+
+        receitas.forEach(receita => {
+            let receitaHTML = `
+                <div class="item" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+
+    });
+
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>

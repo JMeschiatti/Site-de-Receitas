@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Lanches</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/uma-deliciosa-apresentacao-de-hamburguer-vegano_23-2151910878.jpg?t=st=1742242244~exp=1742245844~hmac=ba9b3f808a38a8a63d79fe460e304864840badd1f90344f8f79a3c01c48c2054&w=900);">
+                <div class="text">
+                    <h1>Bem-vindo ao universo dos lanches deliciosos!</h1>
+                    <h4>Aqui, você vai encontrar uma seleção imperdível de receitas que vão satisfazer sua fome de forma prática e saborosa. 
+                        Desde sanduíches rápidos até petiscos mais elaborados, passando pelas opções mais criativas para um lanche diferenciado. 
+                        Seja para uma pausa durante o dia ou para uma reunião com os amigos, temos receitas para agradar todos os gostos e para todos os 
+                        níveis de habilidade na cozinha. Prepare-se para saborear e se encantar com cada opção!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Tacacá de Tapioca -->
+    <div class="modal fade" id="tacaca-de-tapioca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1/2 copo de caldo de peixe<br>
+                    2 colheres de sopa de goma de tapioca<br>
+                    1 colher de sopa de alho picado<br>
+                    1 pimenta-de-cheiro<br>
+                    1/2 limão<br>
+                    Sal a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma panela, aqueça o caldo de peixe.<br>
+                    Dissolva a goma de tapioca no caldo quente e mexa até ficar uma massa grossa.<br>
+                    Em uma frigideira, refogue o alho picado até dourar.<br>
+                    Monte o tacacá colocando a mistura de tapioca no fundo, o caldo de peixe por cima e finalize com a pimenta e o limão.<br>
+                    Sirva quente.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Pão de queijo da Amazônia -->
+    <div class="modal fade" id="pao-de-queijo-da-amazonia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 xícara de polvilho doce<br>
+                    1/2 xícara de queijo coalho ralado<br>
+                    1/2 xícara de leite<br>
+                    1/4 de xícara de óleo de babaçu<br>
+                    1 ovo<br>
+                    Sal a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture o polvilho doce e o queijo ralado.<br>
+                    Em uma panela, aqueça o leite e o óleo de babaçu até ficar morno.<br>
+                    Adicione o leite e o óleo morno à mistura de polvilho e queijo e mexa até formar uma massa homogênea.<br>
+                    Acrescente o ovo e o sal e continue mexendo.<br>
+                    Modele os pães de queijo e leve ao forno preaquecido a 180°C por 15-20 minutos.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Beiju de tapioca com coco -->
+    <div class="modal fade" id="beiju-de-tapioca-com-coco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1/2 xícara de goma de tapioca<br>
+                    2 colheres de sopa de coco ralado<br>
+                    1 colher de sopa de açúcar<br>
+                    1/4 xícara de leite de coco<br>
+                    1 colher de sopa de manteiga
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Coloque a goma de tapioca em uma frigideira quente e espalhe bem.<br>
+                    Quando começar a grudar, vire com cuidado e adicione o coco ralado e o açúcar por cima.<br>
+                    Regue com o leite de coco e deixe dourar dos dois lados.<br>
+                    Finalize com manteiga derretida por cima antes de servir.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Cuscuz nordestino recheado -->
+    <div class="modal fade" id="cuscuz-nordestino-recheado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 xícara de flocos de milho<br>
+                    1/4 de xícara de leite<br>
+                    1 ovo cozido<br>
+                    2 colheres de sopa de queijo ralado<br>
+                    1 colher de chá de manteiga<br>
+                    Sal a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Misture os flocos de milho com o leite e o sal, até formar uma massa compacta.<br>
+                    Em uma frigideira, coloque a mistura de milho e cozinhe até que o cuscuz fique firme.<br>
+                    Após o cuscuz estar pronto, faça um corte no meio e coloque o ovo cozido picado e o queijo ralado.<br>
+                    Finalize com manteiga derretida por cima e sirva quente.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Xis Gaúcho -->
+    <div class="modal fade" id="xis-gaucho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    1 pão de hambúrguer<br>
+                    1 bife de carne de vaca grelhado<br>
+                    1 fatia de queijo prato<br>
+                    Alface, tomate e cebola roxa<br>
+                    Maionese, ketchup e mostarda a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Grelhe o bife de carne até o ponto desejado.<br>
+                    Corte o pão ao meio e passe maionese, ketchup e mostarda nas duas metades.<br>
+                    Coloque o bife grelhado, a fatia de queijo, alface, tomate e cebola no pão.<br>
+                    Feche o pão e sirva quente.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() => {
+        const receitas = [
+            // Tacacá de Tapioca
+            {
+                nome: 'Tacacá de Tapioca', 
+                modal: '#tacaca-de-tapioca',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTMRm807RxtTC3Bx910AkXw0ipiepcv-Uwg&s'
+            },
+            // Pão de Queijo da Amazônia
+            {
+                nome: 'Pão de Queijo da Amazônia', 
+                modal: '#pao-de-queijo-da-amazonia',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5MoYRr4pJyi7m2ZQ8jZD_JYUvFmpnjTRng&s'
+            },
+            // Beiju de Tapioca com Coco
+            {
+                nome: 'Beiju de Tapioca com Coco', 
+                modal: '#beiju-de-tapioca-com-coco',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCUF7_br3k9FqB7dHFao79ae-TSZXxXnNuw&s'
+            },
+            // Cuscuz Nordestino Recheado
+            {
+                nome: 'Cuscuz Nordestino Recheado', 
+                modal: '#cuscuz-nordestino-recheado',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzb_gBVv06tESI-MoAyQy2O7M9e1TEr8wtyA&s'
+            },
+            // Xis Gaúcho
+            {
+                nome: 'Xis Gaúcho', 
+                modal: '#xis-gaucho',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ldLZJrGxbTK9CyK2Gj4kfAlHcCHHE09VtA&s'
+            }
+        ];
+
+        receitas.forEach(receita => {
+            let receitaHTML = `
+                <div class="item" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+
+    });
+
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>

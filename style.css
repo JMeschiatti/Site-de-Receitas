@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #949494;
+    background-image:url(https://img.freepik.com/fotos-gratis/fundo-de-design-texturizado-simples-branco_53876-106174.jpg?ga=GA1.1.12206838.1742414231&semt=ais_hybrid);
+    overflow-x: hidden;
+}body::-webkit-scrollbar{width: .1px;}
+
+/* MENU */
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    background:rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    padding: 0 2%; 
+}    
+header .logo{
+    height: 100%;
+    font-family: 'Cookie', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    color: #eaeaea;
+    cursor: pointer;
+}
+header .logo h1{
+    font-size: 5vh;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 1;
+    overflow: hidden;
+}
+header ul li{
+    margin: 0 2%;
+    list-style: none;
+}
+header ul li a{
+    padding: 2px;
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #eaeaea;
+}
+header ul li a::after{
+    content: '';
+    position: absolute;
+    background: #eaeaea;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 1.5px;
+    transform: translateX(-50%);
+    transition: .6s ease-in-out;
+}header ul li a:hover::after{
+    width: 110%;
+}
+
+header .menu{
+    display: none;
+    cursor: pointer;
+}
+header .menu div{
+    margin: 25% 0;
+    padding: 1px 12px;
+    background: #eaeaea;
+    transition: 1s ease-in-out;
+}
+/* RESPONSIVIDADE MENU */
+@media (max-width: 960px){
+    header .menu{
+        display: block;
+        margin: 0 6.5% 0 0;
+        z-index: 5;
+    }
+    header ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0vh;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.788);
+        transition: 1s ease-in-out;
+    }
+    header ul li{
+        text-align: center;
+        margin: 7% 12% 7% 0;
+    }
+}
+@media (max-width: 637px){
+    header .menu{
+        margin: 0 8.5% 0 0;
+    }
+    header ul{
+        width: 25vw;
+    }
+}
+@media (max-width: 507px){
+    header .menu{
+        margin: 0 10.5% 0 0;
+    }
+    header ul{
+        width: 30vw;
+    }
+}
+@media (max-width: 422px){
+    header .menu{
+        margin: 0 15.5% 0 0;
+    }
+    header ul{
+        width: 40vw;
+    }
+}
+@media (max-width: 321px){
+    header .menu{
+        display: block;
+        margin: 0 6.5% 0 0;
+        z-index: 5;
+    }
+    header ul{
+        width: 100vw;
+    }
+    header ul li{
+        text-align: center;
+        margin: 6% 2% 6% 0;
+    }
+}
+@media (max-width: 290px){
+    header .logo{
+        display: none;
+    }
+}
+@media (max-width: 234px){
+    header .menu{
+        display: block;
+        margin: 0 6.5% 0 0;
+        z-index: 5;
+    }
+    header ul{
+        width: 100vw;
+    }
+    header ul li{
+        text-align: center;
+        margin: 8% 2% 8% 0;
+    }
+}
+
+section .container .title{
+    width: 100vw;
+    height: 8vh;
+    color: #232323;
+    font-family: 'Cookie', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+section .container{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section .container .banner{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+section .container .banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: brightness(0.6);
+}
+section .container .banner .text{
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    max-width: 50%;
+}
+section .container .banner .text h1{
+    font-family: 'Cookie', sans-serif;
+    font-size: 7vh;
+    color: #eaeaea;
+}
+section .container .banner .text h4{
+    font-family: sans-serif;
+    font-size: 2.3vh;
+    color: #eaeaea;
+    font-weight: 400;
+    line-height: 3vh;
+}
+
+section .container .receitas{
+    margin: 1% 0;
+    position: relative;
+    width: 100vw;
+    gap: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section .container .receitas .item{
+    position: relative;
+    margin: .5% 0;
+    width: calc(25% - 1%);
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 5px #232323;
+    transition: .7s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+section .container .receitas .item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: brightness(0.6);
+}
+section .container .receitas .item h2{
+    margin: 2% 0;
+    font-family: 'Cookie', sans-serif;
+    font-size: 6vh;
+    color: #eaeaea;
+    transition: .6s ease-in-out;
+    transform: scale(0.7);
+    opacity: 0;
+}section .container .receitas .item:hover h2{
+    opacity: 1;
+    transform: scale(1.0);
+}
+@media (max-width: 1160px){
+    section .container .receitas .item{
+        width: 26%;
+    }
+}
+@media (max-width: 1030px){
+    section .container .receitas .item{
+        width: 28%;
+    }
+}
+@media (max-width: 980px){
+    section .container .receitas .item{
+        width: 29%;
+    }
+}
+@media (max-width: 940px){
+    section .container .receitas .item{
+        width: 31%;
+    }
+}
+@media (max-width: 850px){
+    section .container .receitas .item{
+        width: 33%;
+    }
+}
+@media (max-width: 835px){
+    section .container .receitas .item{
+        width: 35%;
+    }
+}
+@media (max-width: 821px){
+    section .container .banner .text{
+        max-width: 70%;
+    }
+}
+@media (max-width: 750px){
+    section .container .receitas .item{
+        width: 38%;
+    }
+}
+@media (max-width: 700px){
+    section .container .receitas .item{
+        width: 40%;
+    }
+}
+@media (max-width: 650px){
+    section .container .receitas .item{
+        width: 42%;
+    }
+}
+@media (max-width: 620px){
+    section .container .receitas .item{
+        width: 45%;
+    }
+}
+@media (max-width: 587px){
+    section .container .banner .text{
+        left: 2.5%;
+        max-width: 95%;
+    }
+}
+@media (max-width: 575px){
+    section .container .receitas .item{
+        width: 49%;
+    }
+}
+@media (max-width: 520px){
+    section .container .receitas .item{
+        width: 54%;
+    }
+}
+@media (max-width: 470px){
+    section .container .receitas .item{
+        width: 61%;
+    }
+}
+@media (max-width: 432px){
+    section .container .banner .text{
+        top: 28%;
+        left: 1%;
+        max-width: 98%;
+    }
+    section .container .banner .text h1{
+        font-size: 5vh;
+    }
+    section .container .banner .text h4{
+        font-size: 2vh;
+        line-height: 2.5vh;
+    }
+}
+@media (max-width: 420px){
+    section .container .receitas .item{
+        width: 67%;
+    }
+}
+@media (max-width: 385px){
+    section .container .receitas .item{
+        width: 71%;
+    }
+}
+@media (max-width: 350px){
+    section .container .receitas .item{
+        width: 80%;
+    }
+}
+@media (max-width: 325px){
+    section .container .receitas .item{
+        width: 85%;
+    }
+}
+@media (max-width: 304px){
+    section .container .banner .text h1{
+        font-size: 3.7vh;
+    }
+    section .container .banner .text h4{
+        font-size: 1.7vh;
+        line-height: 2.3vh;
+    }
+}
+@media (max-width: 300px){
+    section .container .receitas .item{
+        width: 91%;
+    }
+}
+@media (max-width: 280px){
+    section .container .receitas .item{
+        width: 95%;
+    }
+}
+@media (max-width: 272px){
+    section .container .receitas .item{
+        height: 50vh;
+    }
+}
+@media (max-width: 245px){
+    section .container .receitas .item{
+        height: 45vh;
+    }
+}
+@media (max-width: 225px){
+    section .container .receitas .item{
+        height: 40vh;
+    }
+}
+@media (max-width: 210px){
+    section .container .receitas .item{
+        height: 36vh;
+    }
+}
+
+section .container .rodape{
+    position: relative;
+    width: 100vw;
+    height: 32vh;
+    background: #532d01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section .container .rodape .redes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section .container .rodape .redes h4{
+    font-family: 'Cookie', sans-serif;
+    font-size: 7vh;
+    color: #eaeaea;
+}
+section .container .rodape .redes .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .container .rodape .redes .social a{
+    margin: 0 2%;
+    font-size: 3.5vh;
+    color: #eaeaea;
+    transition: .7s ease-in-out;
+}section .container .rodape .redes .social a:hover{
+    transform: scale(1.4);
+}
+section .container .rodape .links{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .container .rodape .links a{
+    margin: 2% 2%;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #eaeaea;
+    text-decoration: none;
+    transition: .6s ease-in-out;
+}section .container .rodape .links a:hover{
+    letter-spacing: 1px;
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pães</title>
+</head>
+
+<style>
+    @media (max-width: 360px){
+        section .filtro form label{
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/celebracao-do-dia-mundial-da-alimentacao-com-uma-bola-ou-globo-mundial-cercado-por-comida_23-2151794095.jpg?t=st=1742242758~exp=1742246358~hmac=06b08a6c699a2ffc34aeb8c226ae6f0efed239967c607225fb2dbe8b347511cc&w=996);">
+                <div class="text">
+                    <h1>Explore os sabores únicos das regiões do Brasil!</h1>
+                    <h4>Descubra a riqueza da culinária brasileira com receitas típicas de cada região! Do Norte ao Sul, 
+                        trazemos pratos autênticos que carregam tradição e sabor. Experimente o tacacá e o pato no tucupi da 
+                        Amazônia, o vatapá e a moqueca do Nordeste, o feijão tropeiro e o pão de queijo do Sudeste, o churrasco 
+                        e o barreado do Sul, além do arroz com pequi e da pamonha do Centro-Oeste. Seja para reviver memórias 
+                        ou conhecer novos sabores, nossas receitas vão levar você a uma viagem gastronômica inesquecível pelo Brasil!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="filtro">
+                <form action="#" method="GET">
+                    <label for="regiao">Região:</label>
+                    <select name="regiao" id="regiao">
+                        <option value="">Todas</option>
+                        <option value="norte">Norte</option>
+                        <option value="nordeste">Nordeste</option>
+                        <option value="sudeste">Sudeste</option>
+                        <option value="sul">Sul</option>
+                        <option value="centro-oeste">Centro-Oeste</option>
+                    </select>
+                    <label for="receita">Receitas:</label>
+                    <select name="receita" id="receita">
+                        <option value="">Todas</option>
+                        <option value="doces">Doces</option>
+                        <option value="salgados">Salgados</option>
+                        <option value="sucos">Sucos</option>
+                        <option value="lanches">Lanches</option>
+                        <option value="carnes">Carnes</option>
+                        <option value="vegetais">Vegetais</option>
+                        <option value="paes">Pães</option>
+                    </select>
+                </form>
+            </div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Pão Manteiga -->
+    <div class="modal fade" id="pao-de-manteiga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de farinha de trigo<br>
+                    10g de fermento biológico seco<br>
+                    1 colher de chá de sal<br>
+                    2 colheres de sopa de açúcar<br>
+                    250ml de leite morno<br>
+                    100g de manteiga amolecida<br>
+                    1 ovo<br>
+                    1 colher de sopa de óleo<br>
+                    1/2 xícara de água morna (se necessário para ajustar a consistência)
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela grande, misture o fermento, o açúcar e o leite morno. Deixe descansar por 5 a 10 minutos para ativar o fermento.<br>
+                    Adicione o ovo, o óleo e a manteiga amolecida. Misture bem.<br>
+                    Vá adicionando a farinha de trigo aos poucos, misturando até formar uma massa homogênea.<br>
+                    Adicione o sal e continue a amassar até a massa ficar lisa e elástica. Se necessário, acrescente a água morna para ajudar a dar o ponto.<br>
+                    Cubra a massa com um pano limpo e deixe descansar por cerca de 1 hora ou até que dobre de volume.<br>
+                    Após o crescimento, modele os pães no formato desejado (pode ser redondo ou alongado).<br>
+                    Coloque em uma assadeira untada ou forrada com papel manteiga e deixe descansar por mais 30 minutos.<br>
+                    Enquanto isso, preaqueça o forno a 180°C.<br>
+                    Leve o pão ao forno por cerca de 25 a 30 minutos, ou até que fique dourado.<br>
+                    Retire do forno e deixe esfriar um pouco antes de servir.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    function filtrarProdutos(){
+        // Valores dos Filtros
+        const selectRegiao = document.getElementById('regiao');
+        const selectReceita = document.getElementById('receita');
+
+        selectRegiao.addEventListener('change', aplicarFiltro);
+        selectReceita.addEventListener('change', aplicarFiltro);
+
+        function aplicarFiltro(){
+            const valorRegiao = selectRegiao.value.toLowerCase();
+            const valorReceita = selectReceita.value.toLowerCase();
+            const produtos = document.querySelectorAll('.item');
+
+            produtos.forEach(produto => {
+                const regiaoProduto = produto.getAttribute('data-marca'); // Captura a regiao correta
+                const tipoProduto = produto.getAttribute('id');
+                let exibirProduto = true;
+
+                // Filtro de Região
+                if (valorRegiao !== "" && regiaoProduto !== valorRegiao) {  // Verifica se não é "todas"
+                    exibirProduto = false;
+                }
+                // Filtro de Tipo
+                if (valorReceita !== "" && tipoProduto !== valorReceita) {  // Verifica se não é "todas"
+                    exibirProduto = false;
+                }
+
+                // Exibe ou oculta o produto com base nos filtros
+                produto.style.display = exibirProduto ? "block" : "none";
+
+            })
+        }
+    }
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() =>{
+        const receitas = [
+            // Salada de Grão-de-bico com Legumes
+            {
+                regiao: 'centro-oeste',
+                tipo: 'vegetais',
+                nome: 'Salada de Grão-de-bico com Legumes', 
+                modal: '#salada-de-grao-de-bico-com-legumes',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKIOsveMrId-9sSifyHxNvjWu9aDwKJQJUg&s'
+            },
+            // Curry de Abóbora e Espinafre
+            {
+                regiao: 'centro-oeste',
+                tipo: 'vegetais',
+                nome: 'Curry de Abóbora e Espinafre', 
+                modal: '#curry-de-abobora-e-espinafre',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDtlcHT3oB2ZJqtWGTozBiO2tEdb_WS-c6w&s'
+            },
+            // Strogonoff de Cogumelos
+            {
+                regiao: 'sudeste',
+                tipo: 'vegetais',
+                nome: 'Strogonoff de Cogumelos', 
+                modal: '#strogonoff-de-cogumelos',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3nLabRezFus2JK679BAvB5PROOPQd2DqErw&s'
+            },
+            // Escondidinho de Mandioquinha com Cogumelos
+            {
+                regiao: 'sudeste',
+                tipo: 'vegetais',
+                nome: 'Escondidinho de Mandioquinha com Cogumelos', 
+                modal: '#escondidinho-de-mandioquinhacom-cogumelos',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2mZUUIl8Abtluhd6LsBYDMWVboutXOnewA&s'
+            },
+            // Sopa de Abóbora com Gengibre
+            {
+                regiao: 'sudeste',
+                tipo: 'vegetais',
+                nome: 'Sopa de Abóbora com Gengibre', 
+                modal: '#sopade-abobora-com-gengibre',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0bG18C3ClRZP1Lyyop7rehplkXcpLdy1Sg&s'
+            },
+            // Suco de Cupuaçu
+            {
+                regiao: 'norte',
+                tipo: 'sucos',
+                nome: 'Suco de Cupuaçu', 
+                modal: '#suco-de-cupuacu',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSexkH51B133lkJR21VuIs0SN6ULntJw6aew&s'
+            },
+            // Suco de Bacaba
+            {
+                regiao: 'norte',
+                tipo: 'sucos',
+                nome: 'Suco de Bacaba', 
+                modal: '#suco-de-bacaba',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bSCCPNayfSaAcIj_4twxqxFR1MllXb1Mmg&s'
+            },
+            // Suco de Caju
+            {
+                regiao: 'nordeste',
+                tipo: 'sucos',
+                nome: 'Suco de Caju', 
+                modal: '#suco-de-caju',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKA6hvrZfNa22F40bc5iu_yNW7THuW9g2zQ&s'
+            },
+            // Suco de Umbu
+            {
+                regiao: 'nordeste',
+                tipo: 'sucos',
+                nome: 'Suco de Umbu', 
+                modal: '#suco-de-umbu',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOczpK9dQ0sZzgPT0kjnr-kzYigDijiLYobw&s'
+            },
+            // Suco de Maçã Verde com Hortelã
+            {
+                regiao: 'sudeste',
+                tipo: 'sucos',
+                nome: 'Suco de Maçã Verde com Hortelã', 
+                modal: '#suco-de-maca-verde-com-hortela',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuN6qdTawyVon2VR-WDZ0vRWrMlpQfpz8Iw&s'
+            },
+            // Pão Francês
+            {
+                regiao: 'Sudeste',
+                tipo: 'paes',
+                nome: 'Pão Francês', 
+                modal: '#pao-frances',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VMWdnUJdJ1SVfoPNBO5uaijz5bHFqM-yAg&s'
+            },
+            // Baguete
+            {
+                regiao: 'Sudeste',
+                tipo: 'paes',
+                nome: 'Baguete', 
+                modal: '#baguete',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPM4NizJKRK8j79BBi22A3pJxil82rPTDFTg&s'
+            },
+            // Pão de Forma
+            {
+                regiao: 'Sudeste',
+                tipo: 'paes',
+                nome: 'Pão de Forma', 
+                modal: '#pao-de-forma',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9BLYUSEEfzPjURiT414XqpU1Tu6QdhrxCA&s'
+            },
+            // Ciabatta
+            {
+                regiao: 'Sul',
+                tipo: 'paes',
+                nome: 'Ciabatta',
+                modal: '#ciabatta',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fKDlm_IrgzTctZHXC2NfzwdzI0Ga4uZSjA&s'
+            },
+            // Tacacá de Tapioca
+            {
+                regiao: 'Norte',
+                tipo: 'lanches',
+                nome: 'Tacacá de Tapioca', 
+                modal: '#tacaca-de-tapioca',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTMRm807RxtTC3Bx910AkXw0ipiepcv-Uwg&s'
+            },
+            // Pão de Queijo da Amazônia
+            {
+                regiao: 'Norte',
+                tipo: 'lanches',
+                nome: 'Pão de Queijo da Amazônia', 
+                modal: '#pao-de-queijo-da-amazonia',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5MoYRr4pJyi7m2ZQ8jZD_JYUvFmpnjTRng&s'
+            },
+            // Beiju de Tapioca com Coco
+            {
+                regiao: 'Nordeste',
+                tipo: 'lanches',
+                nome: 'Beiju de Tapioca com Coco', 
+                modal: '#beiju-de-tapioca-com-coco',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCUF7_br3k9FqB7dHFao79ae-TSZXxXnNuw&s'
+            },
+            // Cuscuz Nordestino Recheado
+            {
+                regiao: 'Nordeste',
+                tipo: 'lanches',
+                nome: 'Cuscuz Nordestino Recheado', 
+                modal: '#cuscuz-nordestino-recheado',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzb_gBVv06tESI-MoAyQy2O7M9e1TEr8wtyA&s'
+            },
+            // Xis Gaúcho
+            {
+                regiao: 'Sul',
+                tipo: 'lanches',
+                nome: 'Xis Gaúcho', 
+                modal: '#xis-gaucho',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ldLZJrGxbTK9CyK2Gj4kfAlHcCHHE09VtA&s'
+            },
+            // Bolo de Rolo
+            {
+                regiao: 'nordeste',
+                tipo: 'doces',
+                nome: 'Bolo de Rolo', 
+                modal: '#bolo-de-rolo',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4R73ZxbtNe6cR3-XdtEMieNoq3zf99ryeg&s'
+            },
+            // Cartola
+            {
+                regiao: 'nordeste',
+                tipo: 'doces',
+                nome: 'Cartola', 
+                modal: '#cartola',
+                img: 'https://www.receiteria.com.br/wp-content/uploads/cartola-de-banana.jpeg'
+            },
+            // Cocada
+            {
+                regiao: 'nordeste',
+                tipo: 'doces',
+                nome: 'Cocada', 
+                modal: '#cocada',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qbyupqm3y_SUKSPUjeAUUhbfe2hSPYm2BQ&s'
+            },
+            // Brigadeiro
+            {
+                regiao: 'sudeste',
+                tipo: 'doces',
+                nome: 'Brigadeiro', 
+                modal: '#brigadeiro',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3ADee3Yqt15y_jhZYnI17CpAT-4S41wAzBjxj-h3rbxcOCmHSb53Y8tlOZVGfWbLrw4&usqp=CAU'
+            },
+            // Beijinho
+            {
+                regiao: 'sudeste',
+                tipo: 'doces',
+                nome: 'Beijinho', 
+                modal: '#beijinho',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjaWv585yhYDb0TRmT6dK9KbNiLN6cGHDyzg&s'
+            },
+            // Quindim
+            {
+                regiao: 'sudeste',
+                tipo: 'doces',
+                nome: 'Quindim', 
+                modal: '#quindim',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpCo4vueEJqGFfrFvRzxAMaoqNqQ3PmGSHA&s'
+            },
+            // Torta de Maçã
+            {
+                regiao: 'sudeste',
+                tipo: 'doces',
+                nome: 'Torta de Maçã', 
+                modal: '#torta-de-maca',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EI5R0afbBD-tShdkWmZB5btMWkZlsW1j-Q&s' 
+            },
+            // Strogonoff de Carne
+            {
+                regiao: 'sudeste',
+                tipo: 'carnes',
+                nome: 'Strogonoff de Carne', 
+                modal: '#strogonoff-de-carne',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPsThFqUGBG2kjtL2lqxNuL3R9787Hb3a-A&s'
+            },
+            // Tacacá Burguer
+            {
+                regiao: 'norte',
+                tipo: 'lanccarneshes',
+                nome: 'Tacacá Burguer', 
+                modal: '#tacaca-burguer',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0k93MTlk5VqMqtaGf-3jFMJdxXg8aaqRSxQ&s'
+            },
+            // Baião
+            {
+                regiao: 'nordeste',
+                tipo: 'salgados',
+                nome: 'Baião', 
+                modal: '#x-baiao',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTiQNXsE-RH6Jvtqx2n8yAZsEG3uENzbvWyw&s'
+            },
+            // Bife à Parmegiana
+            {
+                regiao: 'sudeste',
+                tipo: 'carnes',
+                nome: 'Bife à Parmegiana', 
+                modal: '#bife-a-parmegiana',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPOkD6Wn0xyB-to0K2_IwIjb4EkUNcqS8iQ&s'
+            },
+            // Carne de Panela
+            {
+                regiao: 'centro-oeste',
+                tipo: 'carnes',
+                nome: 'Carne de Panela', 
+                modal: '#carne-de-panela',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLgr1282W9-tdKNzOvn0YLsrhsPAzAyffOA&s'
+            },
+            // Pão de Manteiga
+            {
+                regiao: 'nordeste',
+                tipo: 'paes',
+                nome: 'Pão de Manteiga', 
+                modal: '#pao-de-manteiga',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-EXAJZv0wDdOFZoak3NjH-AaX2caEe2wRFg&s'
+            }
+        ];
+
+        receitas.forEach(receita =>{
+            let receitaHTML = `
+                <div class="item" id="${receita.tipo}" data-marca="${receita.regiao.toLowerCase()}" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+    });
+
+    filtrarProdutos();
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>

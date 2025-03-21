@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Doces</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Sabores do</h1><h1 style="color:rgb(245, 159, 0);">&nbsp;Brasil</h1></div>
+        <ul>
+            <li><a href="../Avaliação1/doces.html">Doces</a></li>
+            <li><a href="../Avaliação1/salgados.html">Salgados</a></li>
+            <li><a href="../Avaliação1/sucos.html">Sucos</a></li>
+            <li><a href="../Avaliação1/lanches.html">Lanches</a></li>
+            <li><a href="../Avaliação1/carnes.html">Carnes</a></li>
+            <li><a href="../Avaliação1/vegetais.html">Vegetais</a></li>
+            <li><a href="../Avaliação1/paes.html">Pães</a></li>
+            <li><a href="../Avaliação1/regioes.html">Regiões</a></li>
+        </ul>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner" style="background-image:url(https://img.freepik.com/fotos-gratis/vista-de-um-prato-de-comida-deliciosa_23-2150777845.jpg?t=st=1742242181~exp=1742245781~hmac=b1efd64d2b63edc12a87283eac51db84c68a9ee2e72a7d25082a5b342efad43d&w=996);">
+                <div class="text">
+                    <h1>Bem-vindo à nossa saborosa seleção de salgados!</h1>
+                    <h4>Aqui, você vai descobrir uma variedade irresistível de receitas salgadas que são perfeitas para qualquer ocasião. 
+                        De croquetes crocantes a empadinhas recheadas, passando pelas delícias mais tradicionais e aquelas com um toque especial para 
+                        surpreender. Se você está buscando algo para um lanche rápido ou para impressionar em uma reunião, temos opções para todos os gostos
+                        e habilidades culinárias. Prepare-se para saborear cada mordida e transformar simples momentos em grandes prazeres!</h4>
+                </div>
+            </div>
+            <div class="title"><h1 style="margin:1% 0;font-size:8vh;">Receitas</h1></div>
+            <div class="receitas">
+            </div>
+            <div class="rodape">
+                <div class="redes">
+                    <h4>Siga-nos</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="../Avaliação1/doces.html">Doces</a>
+                    <a href="../Avaliação1/salgados.html">Salgados</a>
+                    <a href="../Avaliação1/sucos.html">Sucos</a>
+                    <a href="../Avaliação1/lanches.html">Lanches</a>
+                    <a href="../Avaliação1/carnes.html">Carnes</a>
+                    <a href="../Avaliação1/vegetais.html">Vegetais</a>
+                    <a href="../Avaliação1/paes.html">Pães</a>
+                    <a href="../Avaliação1/regioes.html">Regiões</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal - Bolinhos de Maniçoba -->
+    <div class="modal fade" id="bolinhos-de-manicoba" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    2 xícaras de maniçoba cozida<br>
+                    1 xícara de farinha de trigo<br>
+                    1 ovo<br>
+                    1/2 cebola picada<br>
+                    1 colher de chá de sal<br>
+                    Óleo para fritar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Em uma tigela, misture a maniçoba, a farinha de trigo, o ovo, a cebola e o sal.<br>
+                    Modele os bolinhos e frite-os em óleo quente até ficarem dourados.<br>
+                    Retire da frigideira e coloque em um prato com papel toalha para absorver o excesso de óleo.<br>
+                    Sirva e aproveite!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Coxinha de Frango -->
+    <div class="modal fade" id="coxinha-de-frango" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de frango desfiado<br>
+                    2 xícaras de caldo de frango<br>
+                    2 xícaras de farinha de trigo<br>
+                    1 cebola picada<br>
+                    1 colher de chá de sal<br>
+                    2 ovos batidos<br>
+                    Óleo para fritar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Cozinhe o frango e desfie-o. Reserve o caldo.<br>
+                    Refogue a cebola e misture o frango desfiado com o caldo de frango até absorver.<br>
+                    Em uma panela, coloque a farinha e o sal, adicione o caldo de frango até formar uma massa consistente.<br>
+                    Modele a massa em formato de coxinha, recheie com o frango e passe nos ovos batidos.<br>
+                    Frite até dourar.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Esfirra de Carne -->
+    <div class="modal fade" id="esfirra-de-carne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    500g de carne moída<br>
+                    1 cebola picada<br>
+                    1 tomate picado<br>
+                    2 colheres de sopa de azeite<br>
+                    1 colher de chá de cominho<br>
+                    Sal e pimenta a gosto<br>
+                    500g de massa pronta de esfirra
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Refogue a cebola no azeite até dourar.<br>
+                    Adicione a carne moída, tomate, cominho, sal e pimenta, cozinhando até secar o excesso de líquido.<br>
+                    Modele as esfirras com a massa e recheie com a mistura de carne.<br>
+                    Asse em forno pré-aquecido a 180°C por 20 minutos.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Pastel de Carne -->
+    <div class="modal fade" id="pastel-de-carne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    300g de carne moída<br>
+                    1 cebola picada<br>
+                    2 dentes de alho amassados<br>
+                    1/2 xícara de azeitonas picadas<br>
+                    Sal e pimenta a gosto<br>
+                    Massa de pastel pronta<br>
+                    Óleo para fritar
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Refogue a cebola e o alho, depois adicione a carne moída até dourar.<br>
+                    Acrescente as azeitonas, sal e pimenta.<br>
+                    Modele os pastéis com a massa pronta, recheando com a carne.<br>
+                    Frite em óleo quente até ficarem dourados.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Pão de Queijo -->
+    <div class="modal fade" id="pao-de-queijo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Ingredientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    2 xícaras de polvilho doce<br>
+                    1 xícara de queijo minas ralado<br>
+                    1/2 xícara de leite<br>
+                    1/4 de xícara de óleo<br>
+                    2 ovos<br>
+                    Sal a gosto
+                </div>
+                <hr>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-family:'Cookie',sans-serif;font-size:6vh;">Modo de Preparo</h5>
+                </div>
+                <div class="modal-body">
+                    Misture todos os ingredientes até formar uma massa homogênea.<br>
+                    Modele os pães de queijo e coloque-os em uma assadeira.<br>
+                    Asse em forno pré-aquecido a 180°C por 20 minutos ou até dourar.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // Botão Logo
+    const logo = document.querySelector('.logo')
+    logo.addEventListener('click', function(){
+        location.href = '../Avaliação1/Avaliacao1.html'
+    })
+
+    // Menu
+    const btnMenu = document.querySelector('.menu');
+    btnMenu.addEventListener('click', function(){
+        const ul = document.querySelector('header ul')
+        if(ul.style.height === '0vh' || ul.style.height === ''){
+            ul.style.height = '100vh'
+        }else{
+            ul.style.height = '0vh'
+        }
+    })
+
+    // Criar Cards com o Modal do Bootstrap
+    $(document).ready(() => {
+        const receitas = [
+            // Bolinhos de Maniçoba
+            {
+                nome: 'Bolinhos de Maniçoba', 
+                modal: '#bolinhos-de-manicoba',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-wvQPXpEP8c6pkdspkZh2hpm0RWsYop_ig&s'
+            },
+            // Pastel de Carne
+            {
+                nome: 'Pastel de Carne', 
+                modal: '#pastel-de-carne',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEGmzYht-2uT0HPppxbdy63iIIawGmtrAXw&s'
+            },
+            // Coxinha de Frango
+            {
+                nome: 'Coxinha de Frango', 
+                modal: '#coxinha-de-frango',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcyHWCkImW1p2elxC17quhOSfyDja0swWLA&s'
+            },
+            // Esfirra de Carne
+            {
+                nome: 'Esfirra de Carne', 
+                modal: '#esfirra-de-carne',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShP90taTnTDseMZwG6H4gPRcb0kwSZtzfG4A&s'
+            },
+            // Pão de Queijo
+            {
+                nome: 'Pão de Queijo', 
+                modal: '#pao-de-queijo',
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupQHZ-gh10UjT4W30FzQDVcLpDxCqZnj38w&s'
+            }
+        ];
+
+        receitas.forEach(receita => {
+            let receitaHTML = `
+                <div class="item" style="background-image:url(${receita.img})" data-bs-toggle="modal" data-bs-target="${receita.modal}">
+                    <div class="text">
+                        <h2>${receita.nome}</h2>
+                    </div>
+                </div>
+            `;
+            $('.receitas').append(receitaHTML);
+        });
+
+    });
+
+</script>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</html>
